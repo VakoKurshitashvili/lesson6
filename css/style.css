@@ -1,0 +1,96 @@
+.wrapper-box{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    position: relative;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+}
+
+.child-box{
+
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2s;
+    
+}
+
+
+.wrapper-box:hover {
+    background-color: blue;
+
+}
+
+.child-box:hover{
+    background-color: yellow;
+    transform: translate(-50%, -50%)  rotate(0deg); 
+}
+
+/* keyframeanimation*/
+
+
+.wheel{
+    width: 70px;
+    animation: animationnew 5s infinite;
+    /* position: absolute; */
+
+}
+
+/* .animation-block{
+    position: relative;
+} */
+
+/* @keyframes wheelanimation {
+    0% {transform: rotate(0deg);}
+    /* 25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);} */
+    /* 100% {transform: rotate(360deg);} */
+
+  
+
+
+@keyframes animationnew {
+    0% {transform: rotate(0deg);}
+    /* 25%{transform: translateX(400px)}
+    50%{transform: translateX(600px)}
+    75%{transform: translateX(800px)} */
+    100%{transform: rotate(720deg)}
+    
+}
+
+.block{
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    border-radius: 20px;
+    position: relative;
+    
+}
+
+/* .text{
+    border-style: inset;
+    background-color: green;
+    text-align: center;
+} */
+
+.egt{
+    width: 169px;
+}
+
+
+.egt:hover{
+    -webkit-filter: blur(1px);
+}
+
